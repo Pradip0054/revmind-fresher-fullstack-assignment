@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  # 1. Backend Service Configuration
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"  
+    volumes:
+      - ./backend:/app 
+      - ./data:/data     
+    env_file:
+      - .env  
+
+  # 2. Frontend Service Configuration
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"  
+    volumes:
+      - ./frontend:/app  
+      - /app/node_modules  
+    depends_on:
+      - backend
