@@ -23,3 +23,5 @@ You are expected to build the solution in your own repository and submit your co
 - Commit and push your work incrementally.
 - Your final repository should be public and accessible for review.
 - Submissions must be made only through the Google Form.
+## System Architecture
+![System Architecture Diagram](frontend/Ai_chatbot3.png)
