@@ -1,0 +1,7 @@
+# .gitignore
+backend/venv/
+backend/novabite.db
+backend/__pycache__/
+frontend/node_modules/
+frontend/dist/
+.env
